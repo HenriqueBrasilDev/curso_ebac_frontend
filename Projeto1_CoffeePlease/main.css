@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+
+.container{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    position: relative;
+}
+
+header h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    color: white;
+}
+
+header h1:hover{
+    transition: 2.0s;
+    cursor: pointer;
+    color: #8b886d;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+header > .container{
+    align-items: center;
+    background-color: #68370d;
+    width: 100%;
+    height: 90px;
+    padding: 0 10%;
+}
+
+header nav li{
+    display: inline;
+}
+
+header nav li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+    padding: 35px 30px ;
+}
+
+header nav li a:hover{
+    transition: 2.0s;
+    background-color: white;
+    color: #68370d;
+}
+
+hr{
+    margin: 10px 0;
+}
+
+section > .container{
+    padding-top: 111px;
+}
+
+section .capa-section{
+    width: 50%;
+}
+
+section .capa-section img{
+    width: 100%;
+}
+
+
+section .capa-section img:hover{
+    transition: 2s;
+    width: 101%;
+    box-shadow: 0px 0px 40px #000000;
+    transform: scale(1.0);
+}
+
+section .conteudo{
+    padding-left: 35px;
+    position: absolute;
+    left: 50%;
+    max-width: 50%;
+}
+
+h2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 45px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0));
+    text-align: center;
+    margin-bottom: 20px;
+    height: 60px;
+    
+}
+
+.conteudo p{
+    font-size: 25px;
+    color: #79512e;
+}
+
+.conteudo img{
+    padding-top: 20px;
+    width: 8%;
+    margin-left: 46%;
+}
+
+.conteudo a{
+    text-align: center;
+}
+
+section .container-max{
+    padding-top: 100px;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+}
+
+form{
+    width: 100%;
+}
+
+.container h3{
+    font-size: 35px;
+    font-weight: normal;
+    text-align: center;
+}
+
+form input,
+textarea,
+button{
+    width: 350px;
+    display: block;
+    margin: 20px 0px;
+    height: 35px;
+    padding-left: 10px;
+    border-color: white;
+    border-radius: 10px;
+}
+
+textarea{
+    padding-top: 10px;
+    height: 165px;
+}
+
+button{
+    cursor: pointer;
+    background-image: linear-gradient( #68370d, #2b2118);
+    color: white;
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+    border: none;
+}
+
+button:hover{
+    transition: 2s;
+    background-image: linear-gradient(#2b2118,  #68370d);
+}
+
+.container-max p{
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+.container-max a{
+    display: block;
+    padding: 5px 0px;
+    margin: 10px;
+    border-radius: 30px;
+    background-image: linear-gradient( #68370d, #2b2118);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container-max a:hover{
+    transition: 2.0s;
+    background-image: linear-gradient( #2b2118, #68370d);
+}
+
+.container-max ul{
+    text-decoration: none;
+    list-style: none;
+    display: block;
+}
+
+.container-max ul li{
+    display: inline-block;
+}
+
+input:focus, textarea:focus{
+    transition: 2s;
+    outline-color: #68370d;
+}
+
+footer{
+    background-color: #000000;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
