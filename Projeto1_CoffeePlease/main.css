@@ -21,12 +21,7 @@ header h1{
     font-family: 'Great Vibes', cursive;
     font-size: 50px;
     color: white;
-}
-
-header h1:hover{
-    transition: 2.0s;
     cursor: pointer;
-    color: #8b886d;
 }
 
 header{
@@ -80,7 +75,6 @@ section .capa-section img{
 
 section .capa-section img:hover{
     transition: 2s;
-    width: 101%;
     box-shadow: 0px 0px 40px #000000;
     transform: scale(1.0);
 }
@@ -89,7 +83,6 @@ section .conteudo{
     padding-left: 35px;
     position: absolute;
     left: 50%;
-    max-width: 50%;
 }
 
 h2{
@@ -118,8 +111,7 @@ h2{
 }
 
 section .container-max{
-    padding-top: 100px;
-    height: 100%;
+    padding-top: 200px;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
 }
 
@@ -139,7 +131,7 @@ button{
     width: 350px;
     display: block;
     margin: 20px 0px;
-    height: 35px;
+    height: 50px;
     padding-left: 10px;
     border-color: white;
     border-radius: 10px;
@@ -147,7 +139,7 @@ button{
 
 textarea{
     padding-top: 10px;
-    height: 165px;
+    height: 205px;
 }
 
 button{
@@ -164,9 +156,11 @@ button:hover{
     background-image: linear-gradient(#2b2118,  #68370d);
 }
 
-.container-max p{
+.container-max p,
+address
+{
     padding-top: 10px;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .container-max a{
@@ -176,17 +170,18 @@ button:hover{
     border-radius: 30px;
     background-image: linear-gradient( #68370d, #2b2118);
     color: white;
-    font-size: 30px;
+    font-size: 200%;
     text-align: center;
     width: 50px;
     height: 50px;
     text-decoration: none;
     cursor: pointer;
+    background-image: linear-gradient( #2b2118, #68370d);
 }
 
 .container-max a:hover{
+    background-image: linear-gradient(#68370d,  #2b2118);
     transition: 2.0s;
-    background-image: linear-gradient( #2b2118, #68370d);
 }
 
 .container-max ul{
@@ -208,6 +203,8 @@ footer{
     background-color: #000000;
     text-align: center;
 }
+
+/* Queria deixar mais responsivo, mas, estou atrasado no curso*/
 
 
 
