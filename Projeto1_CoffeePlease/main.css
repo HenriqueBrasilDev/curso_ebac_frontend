@@ -96,7 +96,7 @@ h2{
 }
 
 .conteudo p{
-    font-size: 25px;
+    font-size: 15px;
     color: #79512e;
 }
 
@@ -139,7 +139,7 @@ button{
 
 textarea{
     padding-top: 10px;
-    height: 205px;
+    height: 200px;
 }
 
 button{
@@ -160,7 +160,7 @@ button:hover{
 address
 {
     padding-top: 10px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .container-max a{
