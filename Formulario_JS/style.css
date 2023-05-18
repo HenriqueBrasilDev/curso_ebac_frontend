@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container{
+    width: 800px;
+    display: block;
+    position: flex;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    margin-top: 10%;
+    font-family: 'Raleway', sans-serif;
+    transition: 1s;
+}
+
+form{
+    transition: 2s;
+}
+
+h1{
+    font-size: 35px;
+    padding: 5px 0px;
+    transition: 3s;
+}
+
+h2{
+    font-size: 20px;
+    padding: 10px 0px;
+    transition: 4s;
+}
+
+h3{
+    font-size: 20px;
+    padding: 15px 0 5px 0;
+    transition: 5s;
+}
+
+input{
+    transition: 6s;
+    border-radius: 5px;
+    border: none;
+}
+
+input:focus{
+    border: none;
+}
+
+button{
+    color: white;
+    background-image : linear-gradient( rgba(0, 0, 0, 0.158), rgba(0, 0, 0, 0));
+    border: none;
+    font-size: 20px;
+    padding: 5px 30px;
+    margin: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 6s;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+button:hover{
+    background-image : linear-gradient(rgba(0, 0, 0, 0.158), rgba(0, 0, 0, 0.301));
+
+}
+
+button:focus{
+    border: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300));
+}
+
+.containerposition{
+    width: 800px;
+    position: relative;
+}
+
+.fundo{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    border-radius: 15px;
+}
+
+.none,
+.failed,
+.sucess{
+    opacity: 0;
+}
+
+.selected{
+    transition: 3.5s;
+    opacity: 1;
+}
+
+.none{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0));
+}
+
+.sucess{
+    background-image: linear-gradient(rgba(0, 100, 0, 0.74), rgba(0, 0, 0, 0));
+}
+
+.failed{
+    background-image: linear-gradient(rgba(100, 0, 0, 0.74), rgba(0, 0, 0, 0));
+}
+
+
