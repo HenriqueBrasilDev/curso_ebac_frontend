@@ -46,7 +46,6 @@ function removeall() {
 function direita() {
     scrolll.scrollLeft = 200;
     display.classList.add("displayR");
-    display.classList.add("selected");
 }
 
 function esquerda() {
