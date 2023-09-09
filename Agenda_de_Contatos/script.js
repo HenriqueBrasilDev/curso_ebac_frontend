@@ -44,7 +44,7 @@ function removeall() {
 }
 
 function direita() {
-    scrolll.scrollLeft = 200;
+    scrolll.scrollLeft = 300;
     display.classList.add("displayR");
 }
 

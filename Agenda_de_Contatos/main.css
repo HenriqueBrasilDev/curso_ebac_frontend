@@ -45,7 +45,7 @@ h2{
 }
 
 .containerdisplayduplo{
-    width: 500px;
+    width: 600px;
     display: flex;
     justify-content: space-between;
     margin-top: 75px;
@@ -72,13 +72,13 @@ th{
 .adicionados{
     margin: 0 10px;
     padding-right: 15px;
-    width: 250px;
+    width: 288px;
     max-height: 250px;
     overflow-y: auto;
 }
 
 #novoscontatos{
-    width: 250px;
+    width: 300px;
 }
 
 #novoscontatos input{
@@ -106,7 +106,7 @@ button:hover{
 }
 
 .fundo{
-    width: 500px;
+    width: 600px;
     height: 400px;
     border-radius: 3px;
     top: 0;
