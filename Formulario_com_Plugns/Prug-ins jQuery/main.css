@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+    background-image: url(./images/grafiteback.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    background-image: url(./images/grafiteback.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+
+    /* acompanha a rolagem, diferente da opção fixed que não pode ser alterada */
+    position: sticky;
+    /* ----------------- */
+    top: 0;
+    z-index: 2;
+    box-shadow: 5px 10px 18px #000000;
+}
+
+header h1{
+    font-size: 45px;
+    margin: 15px;
+    cursor: pointer;
+    transition: 2s all;
+}
+
+header h1::after{
+    content:'';
+    transition: all 0.5s ease-in;
+
+    border: 1px solid white;
+    border-width: 100%;
+    display: block;
+    opacity: 0;
+}
+
+header h1:hover{
+    border: 2px, white;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    transition: 1s;
+}
+
+header h1:hover::after{
+    content:'';
+    transition: all 0.5s ease-in;
+
+    border: 1px solid white;
+    border-width: 100%;
+    display: block;
+    opacity: 1;
+}
+
+header > .container,
+footer > .container{
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0px;
+}
+
+hr{
+    background-color: white;
+    height: 2px;
+    border: none;
+}
+
+nav{
+    padding: 16px 0;
+    background-image: url(./images/grafiteback.jpeg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 101%;
+    background-attachment: fixed;
+    box-shadow: 0px -8px 18px #000000;
+
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav li:hover{
+    border: 2px, white;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    transition: 1s;
+}
+
+.menu-hamburguer{
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    margin-bottom: 4px;
+    border-radius: 2px;
+}
+
+.container-flex{
+    display: flex;
+    position: relative;
+}
+
+#carrousel-imagens::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 10%;
+    top: 90%;
+    box-shadow: 0px -10px 18px #000000 inset;
+    z-index: 1;
+}
+
+#sobre-a-loja img{
+    max-width: 400px;
+    margin-right: 24px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#sobre-a-loja{
+    padding: 50px 0;
+}
+#produtos{
+    padding-top: 50px;
+}
+
+section{
+    padding: 0 0 50px 0;
+}
+
+section h2{
+    margin-bottom: 16px;
+    color: white;
+}
+
+.text-sobre h2{
+    color: rgb(0, 0, 0);
+}
+
+.text-sobre{
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    height: 105%;
+    margin-top: 3%;
+    position: absolute;
+    left: 5%;
+}
+
+.text-sobre > h2,
+.text-sobre > p{
+    margin: 20px 20px 20px 370px;
+}
+
+.lista-produtos{
+    flex-wrap: wrap;
+}
+
+.lista-produtos li{
+    list-style: none;
+    max-width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.lista-produtos li img{
+    max-width: 100%;
+    max-height: 50%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.lista-produtos li h3{
+    margin: 16px 0;
+}
+
+.item-central{
+    margin: 0 5%;
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.price{
+    margin: 16px 0;
+    display: block;
+}
+
+/* Edição do formulario */
+
+.form-campo{
+    margin-bottom: 16px;
+}
+
+.form-campo label{
+    font-weight: bold;
+    display: block;
+    color: white;
+}
+
+.form-campo input,
+.form-campo textarea{
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+    padding: 8px;
+    border: none;
+}
+
+input:focus,
+textarea:focus{
+    background-color: rgba(255, 255, 255, 0.863);
+    outline: 0;
+}
+
+.form-campo textarea{
+    resize: none;
+    height: 120px;
+}
+
+form{
+    max-width: 360px;
+}
+
+form button{
+    max-width: 120px;
+}
+
+/* Edição do Footer */
+
+footer{
+    box-shadow: inset 5px 10px 18px #000000;
+
+}
+
+footer p{
+    color: white;
+}
+
+footer li{
+    list-style: none;
+    margin-left: 16px;
+    color: white;
+}
+
+footer li img{
+    height: 32px;
+}
+
+footer .container{
+    justify-content: space-between;
+    align-items: center;
+}
