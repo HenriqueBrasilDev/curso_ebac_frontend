@@ -1,0 +1,64 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: roboto;
+    background-color: rgba(138, 79, 39, 0.507);
+}
+
+.container{
+    max-width: 80%;
+    color: white;  
+}
+
+header{
+    width: 100%;
+    background-color: rgb(138, 79, 39);
+    text-decoration: none;
+    position: relative;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+}
+
+header h1{
+    margin: 0;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    display: inline;
+}
+
+header li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+    padding-left: 40px;
+}
+
+/*fim do header*/
+
+section .container {
+    margin-top: 30px;
+}
+
+section {
+    
+}
+
+
+
+
