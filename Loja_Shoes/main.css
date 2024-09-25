@@ -53,10 +53,27 @@ header li a{
 
 section .container {
     margin-top: 30px;
+    display: flex;
 }
 
-section {
-    
+section img{
+    object-fit: contain;
+    width: 50vw;
+}
+
+section .texto{
+    margin-left: 30px;
+    font-size: 1vh;
+    position: relative;
+}
+
+section .texto h1{
+    margin-bottom: 10px;
+    font-size: 500%;
+}
+
+section .texto hr{
+    margin-bottom: 10px;
 }
 
 
