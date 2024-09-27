@@ -58,24 +58,28 @@ section .container {
 
 section img{
     object-fit: contain;
-    width: 50vw;
+    width: 50%;
 }
 
 section .texto{
     margin-left: 30px;
-    font-size: 1vh;
-    position: relative;
+    font-size: 1vw;
 }
 
 section .texto h1{
     margin-bottom: 10px;
-    font-size: 500%;
+    font-size: 3vw;
+
 }
 
 section .texto hr{
     margin-bottom: 10px;
 }
 
+
+section .grid-prod{
+    display: grid;
+}
 
 
 
