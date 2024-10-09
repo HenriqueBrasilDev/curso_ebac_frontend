@@ -13,16 +13,33 @@ body{
 .container{
     max-width: 1024px;
     margin: 0 auto;
+    position: relative;
 }
 
 
 /* Pesonalização dos textos */
-a{
+
+
+
+.container > a{
     text-decoration: none;
+    color: white;
+    margin-left: 0;
 }
 h1{
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+}
+hr{
+    border: solid 1px white;
+    margin: 20px 0;
+}
+h2{
+    font-size: 20px;
+    font-weight: 350;
 }
 h3{
     color: white;
@@ -74,7 +91,7 @@ header li a{
     
 }
 
-header a::after{
+header li a::after{
     content: " ";
 
     width: 0%;
@@ -87,7 +104,7 @@ header a::after{
     font-weight: bold;
 }
 
-header a:hover::after {
+header li a:hover::after {
     width: 100%;
     box-shadow: 2px 2px 10px black;
 
@@ -109,13 +126,13 @@ section .container {
     display: flex;
 }
 
-section img{
+section .sobre img{
     object-fit: contain;
+    margin-right: 30px;
     width: 50%;
 }
 
 section .texto{
-    margin-left: 30px;
     font-size: 1vw;
 }
 
@@ -123,10 +140,9 @@ section .texto hr{
     margin-bottom: 10px;
 }
 
-
 section .grid-contain{
     display: grid;
-    grid-template-columns: repeat(4, 24.5%);
+    grid-template-columns: repeat(4, 24.25%);
     column-gap: 1%;
     row-gap: 5%;
 }
@@ -148,3 +164,63 @@ section .grid-item button{
 
 }
 
+@media screen and (max-width: 1023px){
+    .container{
+       max-width: 90%; 
+    }
+    section .container {
+        display: block;
+    }
+    section .sobre img{
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    /* Sobre */
+
+    section .grid-contain{
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+        row-gap: 5%;
+    }
+}
+
+@media screen and (max-width: 640px){
+
+    .container{
+        max-width: 510px;
+        width: 90%;
+        overflow: hidden;
+    }
+
+    section .grid-item img{
+        margin: 0;
+    }
+
+    section .grid-contain{
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 3%;
+    }
+
+
+
+    h1{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    header li a{
+        font-size: 10px;
+        margin-right: 0;
+        padding: 30px 10px;        
+    }   
+
+
+    h2{
+        font-size: 17px;
+        font-weight: 350;
+    }
+
+}
