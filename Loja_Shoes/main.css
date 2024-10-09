@@ -190,7 +190,7 @@ section .grid-item button{
 @media screen and (max-width: 640px){
 
     .container{
-        max-width: 510px;
+        min-width: 280px;
         width: 90%;
         overflow: hidden;
     }
